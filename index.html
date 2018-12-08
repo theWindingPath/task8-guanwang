@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>任务8：技能树首页</title>
+
+    <!-- Bootstrap -->
+    <!-- <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/task8-public.css" rel="stylesheet" type="text/css">
+    <link href="css/task8-home.css" rel="stylesheet" type="text/css">
+    <link href="css/task8-ui.css" rel="stylesheet" type="text/css">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="task8-home">
+        <section class="task8-public-top">
+            <div class="public-container hidden-xs">
+
+                <!-- 登录 js弹出层 -->
+                <div class="ui-tanchuceng">
+                    <a href="#1" id="denglu-lianjie">登录</a>
+                </div>
+
+                <ul class="clearfloat">
+                    <li><a href="#"><img src="img/task8-top-weixin.png"></a></li>
+                    <li><a href="#"><img src="img/task8-top-qq.png"></a></li>
+                    <li><a href="#"><img src="img/task8-top-weibo.png"></a></li>
+                </ul>
+                <p>客服热线：010-594-78634</p>
+            </div>
+
+            <div class="top-xiangying hidden-md hidden-lg hidden-sm">
+                <span>登录</span>
+                <span class="line"></span>
+                <span>注册</span>
+            </div>
+        </section>
+        <section class="task8-public-header">
+            <div class="public-container container">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="header-left">
+                            <p>技能树</p>
+                            <a href="#">www.jnshu.com</a>
+                        </div>
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-task8-navbar-collapse-001"
+                                aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-task8-navbar-collapse-001">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="active001"><a href="#">首页</a></li>
+                                <li><a href="./task8-job.html">职业</a></li>
+                                <li><a href="./task8-company.html">推荐</a></li>
+
+                                <!-- ui-search 会影响 boostrap的导航条在 移动端功能 （原因大概在点击 body 隐藏下拉菜单那部分 js代码里 ） -->
+                                <li class="ui-search hidden-xs">
+                                    <a href="#" class="ui-search-selected">
+                                        <span class="item">关于我们</span>
+                                        <span class="icon-xiala">&nbsp;</span>
+                                    </a>
+                                    <div class="ui-search-selected-list">
+                                        <a href="#1">关于我们</a>
+                                        <a href="#1">联系我们</a>
+                                        <a href="#1">加入我们</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- <div class="header-left">
+                    <p>技能树</p>
+                    <a href="#">www.jnshu.com</a>
+                </div> -->
+            </div>
+        </section>
+        <section class="task8-banner">
+
+            <!-- 自定义轮播图 -->
+            <div class="ui-slider-LunBT">
+                <div class="inner">
+                    <div class="innerwraper"><img src="img/task8-banner-001.jpg" alt="" /></div>
+                    <div class="innerwraper"><img src="img/task8-banner-002.png" alt="" /></div>
+                    <div class="innerwraper"><img src="img/task8-banner-003.jpg" alt="" /></div>
+                    <div class="innerwraper"><img src="img/task8-banner-004.png" alt="" /></div>
+                    <div class="innerwraper"><img src="img/task8-banner-001.jpg" alt="" /></div>
+                </div>
+
+                <div class="ui-slider-arrow">
+                    <a href="#l" class="item left">&nbsp;</a>
+                    <a href="#r" class="item right">&nbsp;</a>
+                </div>
+
+                <div class="pagination">
+                    <span class="item active"></span>
+                    <span class="item"></span>
+                    <span class="item"></span>
+                    <span class="item"></span>
+                </div>
+
+            </div>
+
+            <!-- <div class="inner">
+                <div class="innerwraper"><img src="img/task8-banner-001.jpg" alt="" /></div>
+                <div class="innerwraper"><img src="img/task8-banner-002.png" alt="" /></div>
+                <div class="innerwraper"><img src="img/task8-banner-003.jpg" alt="" /></div>
+                <div class="innerwraper"><img src="img/task8-banner-004.png" alt="" /></div>
+                <div class="innerwraper"><img src="img/task8-banner-001.jpg" alt="" /></div>
+            </div>
+            <div class="pagination">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div> -->
+
+            <!-- 这是bootstrap 轮播图 carousel 
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                Indicators 这部分添加下面轮播小圆点 
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                 Wrapper for slides 这里可放图片、文字h3等 
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="./img/task8-banner-001.jpg" class="img-responsive" alt="...">
+                        <div class="carousel-caption">
+                            <h3>轮播图1</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="./img/task8-banner-002.png" class="img-responsive" alt="...">
+                    </div>
+                    <div class="item">
+                        <img src="./img/task8-banner-003.jpg" class="img-responsive" alt="...">
+                    </div>
+                </div>
+
+                 Controls 这是两边的按钮 
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div> -->
+
+        </section>
+        <section class="task8-introduce">
+            <div class="container">
+                <div class="row public-container">
+                    <div class="introduce-one col-md-3 col-xs-12">
+                        <div class="introduce-pic-001"></div>
+                        <span>高效</span>
+                        <p>将五到七年的成长时间，缩短为一年到三年</p>
+                    </div>
+                    <div class="introduce-one col-md-3 col-xs-12">
+                        <div class="introduce-pic-002"></div>
+                        <span>规范</span>
+                        <p>标准的实战教程，不会走弯路</p>
+                    </div>
+                    <div class="introduce-one col-md-3 col-xs-12">
+                        <div class="introduce-pic-003"></div>
+                        <span>人脉</span>
+                        <p>
+                            同班好友，同院学长，技术大师，入学就混入
+                            职脉圈，为以后铺平道路
+                        </p>
+                    </div>
+                    <div class="introduce-one col-md-3 col-xs-12">
+                        <ul class="ul-one">
+                            <li class="introduce-pic-004"></li>
+                            <li>12400</li>
+                        </ul>
+                        <p>累计在线学习人数</p>
+                        <ul class="ul-two">
+                            <li class="introduce-pic-004"></li>
+                            <li>12400</li>
+                        </ul>
+                        <p>学员已经找到满意工作</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="task8-howToStudy">
+            <div class="container">
+                <div class="public-container row">
+                    <h3>如何学习</h3>
+                    <div class="task8-howToStudy-one col-md-3 col-xs-6">
+                        <div class="steps">
+                            <span>1</span>
+                        </div>
+                        <p>匹配你现在的个人情况，寻找适合自己的职位</p>
+                        <a href="#"></a>
+                    </div>
+                    <div class="task8-howToStudy-one col-md-3 col-xs-6">
+                        <div class="steps">
+                            <span>2</span>
+                        </div>
+                        <p>了解职业前景薪金待遇、竞争压力等</p>
+                        <a href="#"></a>
+                    </div>
+                    <div class="task8-howToStudy-one col-md-3 col-xs-6">
+                        <div class="steps">
+                            <span>3</span>
+                        </div>
+                        <p>掌握行业内顶级技能、掌握行业内顶级技能</p>
+                        <a href="#"></a>
+                    </div>
+                    <div class="task8-howToStudy-one col-md-3 col-xs-6">
+                        <div class="steps">
+                            <span>4</span>
+                        </div>
+                        <p>查看职业目标任务、掌握行业内顶级技能</p>
+                        <a href="#"></a>
+                    </div>
+                    <div class="task8-howToStudy-one col-md-3 col-xs-6">
+                        <div class="steps">
+                            <span>5</span>
+                        </div>
+                        <p>参考学习资源，掌握技能点，逐个完成任务</p>
+                        <a href="#"></a>
+                    </div>
+                    <div class="task8-howToStudy-one col-md-3 col-xs-6">
+                        <div class="steps">
+                            <span>6</span>
+                        </div>
+                        <p>加入班级，和小伙伴们互帮互助，一起学习</p>
+                        <a href="#"></a>
+                    </div>
+                    <div class="task8-howToStudy-one col-md-3 col-xs-6">
+                        <div class="steps">
+                            <span>7</span>
+                        </div>
+                        <p>选择导师，一路引导，加速自己成长</p>
+                        <a href="#"></a>
+                    </div>
+                    <div class="task8-howToStudy-one col-md-3 col-xs-6">
+                        <div class="steps">
+                            <span>8</span>
+                        </div>
+                        <p>完成职业技能，升级业界大佬</p>
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="task8-students hidden-xs">
+            <div class="container">
+                <div class="public-container row">
+                    <h4>优秀学员展示</h4>
+                    <div class="students-one col-md-3">
+                        <div class="box">
+                            <ul>
+                                <li class="students-photo"></li>
+                                <li class="students-name">
+                                    <p>技术顾问：罗大佑</p>
+                                </li>
+                                <li class="students-state">
+                                    <p>
+                                        百度技术总监：互联网基础服务领域，
+                                        从事虚拟主机、云服务、域名。
+                                        曾任新网高级技术总监，
+                                        负责技术研发、团队管理与建设。
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="students-one col-md-3">
+                        <div class="box">
+                            <ul>
+                                <li class="students-photo"></li>
+                                <li class="students-name">
+                                    <p>技术顾问：罗大佑</p>
+                                </li>
+                                <li class="students-state">
+                                    <p>
+                                        百度技术总监：互联网基础服务领域，
+                                        从事虚拟主机、云服务、域名。
+                                        曾任新网高级技术总监，
+                                        负责技术研发、团队管理与建设。
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="students-one col-md-3">
+                        <div class="box">
+                            <ul>
+                                <li class="students-photo"></li>
+                                <li class="students-name">
+                                    <p>技术顾问：罗大佑</p>
+                                </li>
+                                <li class="students-state">
+                                    <p>
+                                        百度技术总监：互联网基础服务领域，
+                                        从事虚拟主机、云服务、域名。
+                                        曾任新网高级技术总监，
+                                        负责技术研发、团队管理与建设。
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="students-one col-md-3">
+                        <div class="box">
+                            <ul>
+                                <li class="students-photo"></li>
+                                <li class="students-name">
+                                    <p>技术顾问：罗大佑</p>
+                                </li>
+                                <li class="students-state">
+                                    <p>
+                                        百度技术总监：互联网基础服务领域，
+                                        从事虚拟主机、云服务、域名。
+                                        曾任新网高级技术总监，
+                                        负责技术研发、团队管理与建设。
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="students-pagination">
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="task8-company hidden-xs">
+            <div class="container">
+                <div class="row public-container">
+                    <h4>战略合作企业</h4>
+                    <div class="company-one col-md-2">
+                        <a href="#"></a>
+                    </div>
+                    <div class="company-one col-md-2">
+                        <a href="#"></a>
+                    </div>
+                    <div class="company-one col-md-2">
+                        <a href="#"></a>
+                    </div>
+                    <div class="company-one col-md-2">
+                        <a href="#"></a>
+                    </div>
+                    <div class="company-one col-md-2">
+                        <a href="#"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="task8-friend-link hidden-xs">
+            <div class="container">
+                <div class="public-container row">
+                    <h4>友情链接</h4>
+                    <div class="link-one col-md-2">
+                        <ul>
+                            <li><a href="#">手机软件</a></li>
+                            <li><a href="#">手机软件</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-one col-md-2">
+                        <ul>
+                            <li><a href="#">教师招聘</a></li>
+                            <li><a href="#">教师招聘</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-one col-md-2">
+                        <ul>
+                            <li><a href="#">找工作</a></li>
+                            <li><a href="#">找工作</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-one col-md-2">
+                        <ul>
+                            <li><a href="#">游戏</a></li>
+                            <li><a href="#">游戏</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-one col-md-2">
+                        <ul>
+                            <li><a href="#">购物</a></li>
+                            <li><a href="#">购物</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-one col-md-2">
+                        <ul>
+                            <li><a href="#">培训</a></li>
+                            <li><a href="#">培训</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="task8-public-footer">
+            <div class="container">
+                <div class="row public-container">
+                    <div class="footer-left col-md-4">
+                        <p>技能树--改变你我</p>
+                        <ul>
+                            <li><a href="">关于我们</a></li>
+                            <li><a href="">联系我们</a></li>
+                            <li><a href="">合作企业</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-center col-md-6">
+                        <p>旗下网站</p>
+                        <ul>
+                            <li><a href="">草船云孵化器</a></li>
+                            <li><a href="">最强IT特训营</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">葡萄藤轻游戏</a></li>
+                            <li><a href="">桌游精灵</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-right col-md-2">
+                        <p>微信公众平台</p>
+                        <div class="weixin"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="rights">Copyright &copy; 2015技能树 www.jnshu.com ALL Rights Reserved | 京ICP备135005880号</p>
+        </section>
+
+        <!-- 弹出层遮罩 -->
+        <div id="zhezhao-tanchuceng" class="ui-zhezhao-tanchuceng"></div>
+        <!-- 弹出层窗体 -->
+        <div id="chuangti-tanchuceng" class="ui-chuangti-tanchuceng">
+            <!-- 弹出层关闭按钮 -->
+            <div id="tanchuceng-guanbi" class="ui-tanchuceng-guanbi">×</div>
+            <!-- 弹出层内容区域 js添加 -->
+            <div id="tanchuceng-neirong" class="ui-tanchuceng-neirong">
+
+                <!-- 登录窗体
+                <div id="denglu-chuangti">
+                    <div class="ui-denglu">
+                        <h4 class="ui-biaoti">登录</h4>
+                        <div class="ui-xiangmu">
+                            <label>账号</label>
+                            <input id="yonghuming" class="shurukuang" name="username" type="text" />
+                            <p class="ui-cuowu-xinxi"></p>
+                        </div>
+                        <div class="ui-xiangmu">
+                            <label>密码</label>
+                            <input id="mima" class="shurukuang" name="password" type="password" />
+                        </div>
+                        <div class="ui-xiangmu">
+                            <label>&nbsp;</label>
+                            <input id="denglu-tijiao-anniu" class="ui-tijiao" type="submit" value="已填写好" />
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+
+        <!-- 登录窗体 -->
+        <div id="denglu-chuangti" style="display: none;">
+            <div class="ui-denglu">
+                <h4 class="ui-biaoti">登录</h4>
+                <div class="ui-xiangmu">
+                    <label>账号</label>
+                    <input id="yonghuming" class="shurukuang" name="username" type="text" />
+                    <p class="ui-cuowu-xinxi"></p>
+                </div>
+                <div class="ui-xiangmu">
+                    <label>密码</label>
+                    <input id="mima" class="shurukuang" name="password" type="password" />
+                </div>
+                <div class="ui-xiangmu">
+                    <label>&nbsp;</label>
+                    <input id="denglu-tijiao-anniu" class="ui-tijiao" type="submit" value="已填写好" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <!-- <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <!-- <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- <script type="text/javascript" src="js/task8-lunbotu.js"></script> -->
+    <script type="text/javascript" src="js/task8-ui.js"></script>
+    <script type="text/javascript" src="js/denglu.js"></script>
+</body>
+
+</html>

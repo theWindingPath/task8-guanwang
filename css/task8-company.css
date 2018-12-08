@@ -1,0 +1,63 @@
+.task8-company {
+    background-color: #fafafa;
+    width: 100%;
+    /* max-width: 1920px; */
+}
+.task8-company-items {
+    margin-top: 20px;
+    margin-bottom: 200px;
+}
+.task8-company .task8-company-items .co-link p {
+    display: inline-block;
+}
+.task8-company .task8-company-items .co-link a {
+    display: inline-block;
+    color: #29b078;
+}
+.task8-company .task8-company-items .company-list {
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+.task8-company .task8-company-items .company-list p {
+    margin: 10px 50px;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 10px 0;
+}
+.task8-company .task8-company-items .company-list ul li {
+    list-style-type: circle;
+    margin: 20px 50px;
+    color: orange;
+}
+.task8-company .task8-company-items .company-list ul li.active{
+    list-style-type: disc;
+}
+.task8-company .task8-company-items .company-list ul li a {
+    color: #29b078;
+}
+.task8-company .task8-company-items .company-pre {
+    background-color: #ffffff;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.task8-company .task8-company-items .company-pre .tudou-pic {
+    background: url("../img/task8-company-tudou.png") no-repeat;
+    background-size: 100px auto;
+    width: 230px;
+    height: 100px;
+    margin-top: 30px;
+}
+.task8-company .task8-company-items .company-pre pre{
+    background-color: #fff;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    border: 0;
+    border-top: 1px solid #cdcdcd;
+
+}
+
+@media (max-width:768px) {
+    .public-container{
+        width: 100%;
+    }
+}

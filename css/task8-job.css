@@ -1,0 +1,121 @@
+.task8-job {
+    background-color: #fafafa;
+    width: 100%;
+}
+.task8-job .jobs {
+    margin-bottom: 100px;
+}
+.task8-job .list-one {
+    margin-top: 10px;
+    border-bottom: 1px solid #cdcdcd;;
+    padding: 20px 0;
+
+}
+.task8-job .list-one ul li {
+    display: inline-block;
+}
+.task8-job .list-one ul li a {
+    color: #29b078;
+}
+.task8-job .direction {
+    padding: 20px 0;
+    border-bottom: 1px solid #ababab;
+}
+/* .task8-job .direction ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.task8-job .direction ul li a {
+    color: #000000;
+    display: inline-block;
+} */
+/* .task8-job .direction ul li.active a {
+    color: #29b078;
+} */
+
+.task8-job .direction .active {
+    color: #29b078;
+}
+
+.task8-job .front-end .front-end-title {
+    padding: 20px 0;
+    border-bottom: 1px solid #cdcdcd;
+}
+.task8-job .front-end .front-end-title p{
+    font-weight: 600;
+}
+.task8-job .front-end-table .front-job-one table {
+    border: 1px solid #cdcdcd;
+    /* width: 360px; */
+    width: 320px;
+    height: 420px;
+    background-color: #fff;
+    margin-top: 30px;
+}
+
+.task8-job .front-end-table .front-job-one table tr.job-pic th.pic {
+    /* display: block; */
+    background: url("../img/task8-job-pic.png") no-repeat;
+    background-size: 100% auto;
+    width: 180px;
+    height: 156px;
+    margin: 10px;
+}
+.task8-job .front-end-table .front-job-one table tr.job-pic h5{
+    margin-top: 10px;
+    font-weight: 600;
+}
+.task8-job .front-end-table .front-job-one table tr.job-pic p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+.task8-job .front-end-table .front-job-one table tr.difficulty {
+    color: #ababab;
+}
+.task8-job .front-end-table .front-job-one table tr.difficulty th span {
+    display: inline-block;
+    background: url("../img/task8-star.png") no-repeat;
+    background-size: 100% auto;
+    width: 16px;
+    height: 16px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.task8-job .front-end-table .front-job-one table tr.time {
+    color: #ababab;
+    /* height: 40px; */
+}
+.task8-job .front-end-table .front-job-one table tr.time th span {
+    color: orangered;
+}
+.task8-job .front-end-table .front-job-one table tr.salary {
+    color: #898989;
+}
+.task8-job .front-end-table .front-job-one table tr.salary p{
+    text-align: center;
+    line-height: 100px;
+}
+.task8-job .front-end-table .front-job-one table tr.study-numbers th span {
+    color: orangered;
+}
+.task8-job .front-end-table .front-job-one table tr.tip th p {
+    color: #ababab;
+}
+
+.ui-back-end {
+    display: none;
+}
+
+.task8-job .direction .item{
+    display: inline-block;
+    color: #000000;
+    margin-right: 20px;
+}
+
+.task8-job .direction .active {
+    color: #29b078;
+}
+
+.ui-back-end .front-end-title p{
+    color: #29b078;
+}

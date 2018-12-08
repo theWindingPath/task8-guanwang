@@ -1,0 +1,161 @@
+/* 轮播图 */
+.ui-slider-arrow {
+    /* width: 544px; */
+    width: 1200px;
+    height: 40px;
+    position: absolute;
+    /* margin: 0 auto; */
+    margin-top: -20px;
+    top: 50%;
+    /* background-color: orange; */
+}
+
+.ui-slider-arrow .item {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    background: url(../img/ui-slider-arrow.png) no-repeat;
+}
+
+.ui-slider-arrow .left {
+    left: 0;
+}
+
+.ui-slider-arrow .right {
+    right: 0;
+    /* x -40px */
+    background-position: -40px 0;
+}
+
+/* 下拉框 */
+.ui-search{
+    position: relative;
+    /* width: 122px;
+    padding-right: 22px; */
+}
+.ui-search-selected{
+    width: 122px;
+    padding-right: 22px;
+}
+.ui-search-selected-list{
+    background-color: #29b078;
+    display: none;
+}
+.ui-search .icon-xiala{
+    display: inline-block;
+    position: absolute;
+    left: 112px;
+    top: 50%;
+    margin-top: -11px;
+    width: 22px;
+    height: 22px;
+    background: url(../img/icon-xiala.png) no-repeat;
+    background-size: 100% auto;
+    line-height: 22px;
+    /* cursor: pointer; */
+}
+
+/* 登录弹出层 */
+.task8-public-top .ui-tanchuceng {
+    float: right;
+    margin: 0 20px;
+    height: 40px;
+    line-height: 40px;
+}
+.task8-public-top .ui-tanchuceng a{
+    color: #29b078;
+}
+
+/* 弹出层遮罩 */
+.ui-zhezhao-tanchuceng {
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: #000;
+    opacity: 0.6;
+}
+
+/* 弹出层窗体 */
+.ui-chuangti-tanchuceng {
+    display: none;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    width: 400px;
+    height: 300px;
+    background: #fff;
+}
+/* 关闭按钮 */
+.ui-tanchuceng-guanbi{
+
+    float: right;
+    width: 24px;
+    height: 24px;
+    border: 3px solid #fff;
+    text-align: center;
+    border-radius: 50%;
+    background: #eee;
+
+    margin-right: -12px;
+    margin-top: -12px;
+}
+.ui-tanchuceng-guanbi:hover{
+    cursor: pointer;
+    background: #ccc;
+    color: #fff;
+}
+/* 登录内容区域 */
+.ui-denglu{
+
+}
+.ui-denglu h4{
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin: 10px auto;
+}
+.ui-denglu label{
+    margin-right: 5px;
+    color: #888;
+    display: inline-block;
+    width: 60px;
+    text-align: right;
+}
+.ui-denglu input{
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px 5px;
+    width: 250px;
+}
+.ui-denglu .ui-xiangmu{
+    margin: 20px auto;
+}
+.ui-denglu .ui-tijiao{
+    background: #29b078;
+    border: 1px solid #29b078;
+    border-radius: 5px;
+    padding: 10px 5px;
+    width: 250px;
+    color: #fff;
+}
+.ui-denglu .ui-cuowu-xinxi{
+    color: #29b078;
+    text-align: center;
+}
+
+
+@media (max-width:768px) {
+
+}

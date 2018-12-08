@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>任务8：职业列表页</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/task8-public.css" rel="stylesheet" type="text/css">
+    <link href="css/task8-job.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="task8-job">
+        <section class="task8-public-top">
+            <div class="public-container hidden-xs">
+                <ul class="clearfloat">
+                    <li><a href="#"><img src="img/task8-top-weixin.png"></a></li>
+                    <li><a href="#"><img src="img/task8-top-qq.png"></a></li>
+                    <li><a href="#"><img src="img/task8-top-weibo.png"></a></li>
+                </ul>
+                <p>客服热线：010-594-78634</p>
+            </div>
+            <div class="top-xiangying hidden-md hidden-lg hidden-sm">
+                <span>登录</span>
+                <span class="line"></span>
+                <span>注册</span>
+            </div>
+        </section>
+        <section class="task8-public-header">
+            <div class="public-container container">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="header-left">
+                            <p>技能树</p>
+                            <a href="#">www.jnshu.com</a>
+                        </div>
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-task8-navbar-collapse-001"
+                                aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-task8-navbar-collapse-001">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="active001"><a href="./task8-home.html">首页</a></li>
+                                <li><a href="#">职业</a></li>
+                                <li><a href="./task8-company.html">推荐</a></li>
+                                <li><a href="#">关于</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- <div class="header-left">
+                    <p>技能树</p>
+                    <a href="#">www.jnshu.com</a>
+                </div> -->
+            </div>
+        </section>
+        <section class="jobs public-container ui-tab">
+            <div class="list-one">
+                <ul>
+                    <li>首页-></li>
+                    <li><a href="">职业</a></li>
+                </ul>
+            </div>
+            <div class="direction">
+                <!-- <ul>
+                    <li>方向：</li>
+                    <!-- <li class="active"><a href="#1">全部</a></li> 
+                    <li><a href="#1" class="active item">前端开发</a></li>
+                    <li><a href="#1" class="item">后端开发</a></li>
+                    <li><a href="#1" class="item">移动开发</a></li>
+                    <li><a href="#1" class="item">整站开发</a></li>
+                    <li><a href="#1" class="item">运营维护</a></li>
+                </ul> -->
+
+                <a href="#1" class="active item">前端开发</a>
+                <a href="#1" class="item">后端开发</a>
+                <a href="#1" class="item">移动开发</a>
+                <a href="#1" class="item">整站开发</a>
+                <a href="#1" class="item">运营维护</a>
+            </div>
+
+            <div class="ui-tab-qiehuan">
+
+                <div class="front-end ui-font-end item">
+                    <div class="front-end-title">
+                        <p>前端开发方向</p>
+                    </div>
+                    <div class="container">
+                        <div class="public-container row front-end-table">
+                            <div class="front-job-one col-md-4">
+                                <table class="table table-bordered">
+                                    <tr class="job-pic">
+                                        <th class="pic"></th>
+                                        <th colspan="2">
+                                            <h5>Web前端工程师</h5>
+                                            <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScripted/flash等
+                                                各种Web技术进行产品的开发。
+                                            </p>
+                                        </th>
+
+                                    </tr>
+                                    <tr class="difficulty">
+                                        <th>门槛 <span class="difficulty-stars"></span></th>
+                                        <th colspan="2">难易程度
+                                            <span class="difficulty-stars"></span>
+                                            <span class="difficulty-stars"></span>
+                                        </th>
+
+                                    </tr>
+                                    <tr class="time">
+                                        <th>成长周期
+                                            <span>1-3</span>
+                                            年
+                                        </th>
+                                        <th colspan="2">稀缺程度
+                                            <span>345</span>
+                                            家公司需要
+                                        </th>
+                                    </tr>
+                                    <tr class="salary">
+                                        <th rowspan="3">
+                                            <p>薪资待遇</p>
+                                        </th>
+                                        <th>0-1年</th>
+                                        <th>5k-10k/月</th>
+                                    </tr>
+                                    <tr class="salary">
+
+                                        <th>1-3年</th>
+                                        <th>10k-20k/月</th>
+                                    </tr>
+                                    <tr class="salary">
+
+                                        <th>3-5年</th>
+                                        <th>20k-50k/月</th>
+                                    </tr>
+                                    <tr class="study-numbers">
+                                        <th colspan="3">有
+                                            <span>286</span>
+                                            人正在学
+                                        </th>
+
+
+                                    </tr>
+                                    <tr class="tip">
+                                        <th colspan="3">
+                                            <p>提示：在你学习之前你应该已经掌握xxx、xxx、xxx、等语言基础</p>
+                                        </th>
+
+
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="front-job-one col-md-4">
+                                <table class="table table-bordered">
+                                    <tr class="job-pic">
+                                        <th class="pic"></th>
+                                        <th colspan="2">
+                                            <h5>Web前端工程师</h5>
+                                            <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScripted/flash等
+                                                各种Web技术进行产品的开发。
+                                            </p>
+                                        </th>
+
+                                    </tr>
+                                    <tr class="difficulty">
+                                        <th>门槛 <span class="difficulty-stars"></span></th>
+                                        <th colspan="2">难易程度
+                                            <span class="difficulty-stars"></span>
+                                            <span class="difficulty-stars"></span>
+                                        </th>
+
+                                    </tr>
+                                    <tr class="time">
+                                        <th>成长周期
+                                            <span>1-3</span>
+                                            年
+                                        </th>
+                                        <th colspan="2">稀缺程度
+                                            <span>345</span>
+                                            家公司需要
+                                        </th>
+                                    </tr>
+                                    <tr class="salary">
+                                        <th rowspan="3">
+                                            <p>薪资待遇</p>
+                                        </th>
+                                        <th>0-1年</th>
+                                        <th>5k-10k/月</th>
+                                    </tr>
+                                    <tr class="salary">
+
+                                        <th>1-3年</th>
+                                        <th>10k-20k/月</th>
+                                    </tr>
+                                    <tr class="salary">
+
+                                        <th>3-5年</th>
+                                        <th>20k-50k/月</th>
+                                    </tr>
+                                    <tr class="study-numbers">
+                                        <th colspan="3">有
+                                            <span>286</span>
+                                            人正在学
+                                        </th>
+
+
+                                    </tr>
+                                    <tr class="tip">
+                                        <th colspan="3">
+                                            <p>提示：在你学习之前你应该已经掌握xxx、xxx、xxx、等语言基础</p>
+                                        </th>
+
+
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="front-job-one col-md-4">
+                                <table class="table table-bordered">
+                                    <tr class="job-pic">
+                                        <th class="pic"></th>
+                                        <th colspan="2">
+                                            <h5>Web前端工程师</h5>
+                                            <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScripted/flash等
+                                                各种Web技术进行产品的开发。
+                                            </p>
+                                        </th>
+
+                                    </tr>
+                                    <tr class="difficulty">
+                                        <th>门槛 <span class="difficulty-stars"></span></th>
+                                        <th colspan="2">难易程度
+                                            <span class="difficulty-stars"></span>
+                                            <span class="difficulty-stars"></span>
+                                        </th>
+
+                                    </tr>
+                                    <tr class="time">
+                                        <th>成长周期
+                                            <span>1-3</span>
+                                            年
+                                        </th>
+                                        <th colspan="2">稀缺程度
+                                            <span>345</span>
+                                            家公司需要
+                                        </th>
+                                    </tr>
+                                    <tr class="salary">
+                                        <th rowspan="3">
+                                            <p>薪资待遇</p>
+                                        </th>
+                                        <th>0-1年</th>
+                                        <th>5k-10k/月</th>
+                                    </tr>
+                                    <tr class="salary">
+
+                                        <th>1-3年</th>
+                                        <th>10k-20k/月</th>
+                                    </tr>
+                                    <tr class="salary">
+
+                                        <th>3-5年</th>
+                                        <th>20k-50k/月</th>
+                                    </tr>
+                                    <tr class="study-numbers">
+                                        <th colspan="3">有
+                                            <span>286</span>
+                                            人正在学
+                                        </th>
+
+
+                                    </tr>
+                                    <tr class="tip">
+                                        <th colspan="3">
+                                            <p>提示：在你学习之前你应该已经掌握xxx、xxx、xxx、等语言基础</p>
+                                        </th>
+
+
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="front-end ui-back-end item">
+                    <div class="front-end-title">
+                        <p>后端开发方向</p>
+                    </div>
+                    <div class="container">
+                        <div class="row front-end-table public-container">
+                            <div class="front-job-one col-md-4">
+                                <table class="table table-bordered">
+                                    <tr class="job-pic">
+                                        <th class="pic"></th>
+                                        <th colspan="2">
+                                            <h5>JAVA工程师</h5>
+                                            <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScripted/flash等
+                                                各种Web技术进行产品的开发。
+                                            </p>
+                                        </th>
+
+                                    </tr>
+                                    <tr class="difficulty">
+                                        <th>门槛 <span class="difficulty-stars"></span></th>
+                                        <th colspan="2">难易程度
+                                            <span class="difficulty-stars"></span>
+                                            <span class="difficulty-stars"></span>
+                                        </th>
+
+                                    </tr>
+                                    <tr class="time">
+                                        <th>成长周期
+                                            <span>1-3</span>
+                                            年
+                                        </th>
+                                        <th colspan="2">稀缺程度
+                                            <span>345</span>
+                                            家公司需要
+                                        </th>
+                                    </tr>
+                                    <tr class="salary">
+                                        <th rowspan="3">
+                                            <p>薪资待遇</p>
+                                        </th>
+                                        <th>0-1年</th>
+                                        <th>5k-10k/月</th>
+                                    </tr>
+                                    <tr class="salary">
+
+                                        <th>1-3年</th>
+                                        <th>10k-20k/月</th>
+                                    </tr>
+                                    <tr class="salary">
+
+                                        <th>3-5年</th>
+                                        <th>20k-50k/月</th>
+                                    </tr>
+                                    <tr class="study-numbers">
+                                        <th colspan="3">有
+                                            <span>286</span>
+                                            人正在学
+                                        </th>
+
+
+                                    </tr>
+                                    <tr class="tip">
+                                        <th colspan="3">
+                                            <p>提示：在你学习之前你应该已经掌握xxx、xxx、xxx、等语言基础</p>
+                                        </th>
+
+
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="front-job-one col-md-4">
+                                <table class="table table-bordered">
+                                    <tr class="job-pic">
+                                        <th class="pic"></th>
+                                        <th colspan="2">
+                                            <h5>JAVA工程师</h5>
+                                            <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScripted/flash等
+                                                各种Web技术进行产品的开发。
+                                            </p>
+                                        </th>
+
+                                    </tr>
+                                    <tr class="difficulty">
+                                        <th>门槛 <span class="difficulty-stars"></span></th>
+                                        <th colspan="2">难易程度
+                                            <span class="difficulty-stars"></span>
+                                            <span class="difficulty-stars"></span>
+                                        </th>
+
+                                    </tr>
+                                    <tr class="time">
+                                        <th>成长周期
+                                            <span>1-3</span>
+                                            年
+                                        </th>
+                                        <th colspan="2">稀缺程度
+                                            <span>345</span>
+                                            家公司需要
+                                        </th>
+                                    </tr>
+                                    <tr class="salary">
+                                        <th rowspan="3">
+                                            <p>薪资待遇</p>
+                                        </th>
+                                        <th>0-1年</th>
+                                        <th>5k-10k/月</th>
+                                    </tr>
+                                    <tr class="salary">
+
+                                        <th>1-3年</th>
+                                        <th>10k-20k/月</th>
+                                    </tr>
+                                    <tr class="salary">
+
+                                        <th>3-5年</th>
+                                        <th>20k-50k/月</th>
+                                    </tr>
+                                    <tr class="study-numbers">
+                                        <th colspan="3">有
+                                            <span>286</span>
+                                            人正在学
+                                        </th>
+
+
+                                    </tr>
+                                    <tr class="tip">
+                                        <th colspan="3">
+                                            <p>提示：在你学习之前你应该已经掌握xxx、xxx、xxx、等语言基础</p>
+                                        </th>
+
+
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="front-job-one col-md-4">
+                                <table class="table table-bordered">
+                                    <tr class="job-pic">
+                                        <th class="pic"></th>
+                                        <th colspan="2">
+                                            <h5>JAVA工程师</h5>
+                                            <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScripted/flash等
+                                                各种Web技术进行产品的开发。
+                                            </p>
+                                        </th>
+
+                                    </tr>
+                                    <tr class="difficulty">
+                                        <th>门槛 <span class="difficulty-stars"></span></th>
+                                        <th colspan="2">难易程度
+                                            <span class="difficulty-stars"></span>
+                                            <span class="difficulty-stars"></span>
+                                        </th>
+
+                                    </tr>
+                                    <tr class="time">
+                                        <th>成长周期
+                                            <span>1-3</span>
+                                            年
+                                        </th>
+                                        <th colspan="2">稀缺程度
+                                            <span>345</span>
+                                            家公司需要
+                                        </th>
+                                    </tr>
+                                    <tr class="salary">
+                                        <th rowspan="3">
+                                            <p>薪资待遇</p>
+                                        </th>
+                                        <th>0-1年</th>
+                                        <th>5k-10k/月</th>
+                                    </tr>
+                                    <tr class="salary">
+
+                                        <th>1-3年</th>
+                                        <th>10k-20k/月</th>
+                                    </tr>
+                                    <tr class="salary">
+
+                                        <th>3-5年</th>
+                                        <th>20k-50k/月</th>
+                                    </tr>
+                                    <tr class="study-numbers">
+                                        <th colspan="3">有
+                                            <span>286</span>
+                                            人正在学
+                                        </th>
+
+
+                                    </tr>
+                                    <tr class="tip">
+                                        <th colspan="3">
+                                            <p>提示：在你学习之前你应该已经掌握xxx、xxx、xxx、等语言基础</p>
+                                        </th>
+
+
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="front-job-one col-md-4">
+                                <table class="table table-bordered">
+                                    <tr class="job-pic">
+                                        <th class="pic"></th>
+                                        <th colspan="2">
+                                            <h5>Web前端工程师</h5>
+                                            <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScripted/flash等
+                                                各种Web技术进行产品的开发。
+                                            </p>
+                                        </th>
+
+                                    </tr>
+                                    <tr class="difficulty">
+                                        <th>门槛 <span class="difficulty-stars"></span></th>
+                                        <th colspan="2">难易程度
+                                            <span class="difficulty-stars"></span>
+                                            <span class="difficulty-stars"></span>
+                                        </th>
+
+                                    </tr>
+                                    <tr class="time">
+                                        <th>成长周期
+                                            <span>1-3</span>
+                                            年
+                                        </th>
+                                        <th colspan="2">稀缺程度
+                                            <span>345</span>
+                                            家公司需要
+                                        </th>
+                                    </tr>
+                                    <tr class="salary">
+                                        <th rowspan="3">
+                                            <p>薪资待遇</p>
+                                        </th>
+                                        <th>0-1年</th>
+                                        <th>5k-10k/月</th>
+                                    </tr>
+                                    <tr class="salary">
+
+                                        <th>1-3年</th>
+                                        <th>10k-20k/月</th>
+                                    </tr>
+                                    <tr class="salary">
+
+                                        <th>3-5年</th>
+                                        <th>20k-50k/月</th>
+                                    </tr>
+                                    <tr class="study-numbers">
+                                        <th colspan="3">有
+                                            <span>286</span>
+                                            人正在学
+                                        </th>
+
+
+                                    </tr>
+                                    <tr class="tip">
+                                        <th colspan="3">
+                                            <p>提示：在你学习之前你应该已经掌握xxx、xxx、xxx、等语言基础</p>
+                                        </th>
+
+
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="front-job-one col-md-4">
+                                <table class="table table-bordered">
+                                    <tr class="job-pic">
+                                        <th class="pic"></th>
+                                        <th colspan="2">
+                                            <h5>Web前端工程师</h5>
+                                            <p>Web前端开发工程师，主要职责是利用(X)HTML/CSS/JavaScripted/flash等
+                                                各种Web技术进行产品的开发。
+                                            </p>
+                                        </th>
+
+                                    </tr>
+                                    <tr class="difficulty">
+                                        <th>门槛 <span class="difficulty-stars"></span></th>
+                                        <th colspan="2">难易程度
+                                            <span class="difficulty-stars"></span>
+                                            <span class="difficulty-stars"></span>
+                                        </th>
+
+                                    </tr>
+                                    <tr class="time">
+                                        <th>成长周期
+                                            <span>1-3</span>
+                                            年
+                                        </th>
+                                        <th colspan="2">稀缺程度
+                                            <span>345</span>
+                                            家公司需要
+                                        </th>
+                                    </tr>
+                                    <tr class="salary">
+                                        <th rowspan="3">
+                                            <p>薪资待遇</p>
+                                        </th>
+                                        <th>0-1年</th>
+                                        <th>5k-10k/月</th>
+                                    </tr>
+                                    <tr class="salary">
+
+                                        <th>1-3年</th>
+                                        <th>10k-20k/月</th>
+                                    </tr>
+                                    <tr class="salary">
+
+                                        <th>3-5年</th>
+                                        <th>20k-50k/月</th>
+                                    </tr>
+                                    <tr class="study-numbers">
+                                        <th colspan="3">有
+                                            <span>286</span>
+                                            人正在学
+                                        </th>
+
+
+                                    </tr>
+                                    <tr class="tip">
+                                        <th colspan="3">
+                                            <p>提示：在你学习之前你应该已经掌握xxx、xxx、xxx、等语言基础</p>
+                                        </th>
+
+
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">移动开发</div>
+
+            </div>
+
+        </section>
+        <section class="task8-public-footer">
+            <div class="container">
+                <div class="row public-container">
+                    <div class="footer-left col-md-4">
+                        <p>技能树--改变你我</p>
+                        <ul>
+                            <li><a href="">关于我们</a></li>
+                            <li><a href="">联系我们</a></li>
+                            <li><a href="">合作企业</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-center col-md-6">
+                        <p>旗下网站</p>
+                        <ul>
+                            <li><a href="">草船云孵化器</a></li>
+                            <li><a href="">最强IT特训营</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">葡萄藤轻游戏</a></li>
+                            <li><a href="">桌游精灵</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-right col-md-2">
+                        <p>微信公众平台</p>
+                        <div class="weixin"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="rights">Copyright &copy; 2015技能树 www.jnshu.com ALL Rights Reserved | 京ICP备135005880号</p>
+        </section>
+    </div>
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <script type="text/javascript" src="js/task8-lunbotu.js"></script> -->
+    <script type="text/javascript" src="js/task8-ui.js"></script>
+</body>
+
+</html>

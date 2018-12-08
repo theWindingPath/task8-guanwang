@@ -1,0 +1,483 @@
+.task8-banner {
+    width: 100%;
+    /* height: 600px; */
+    height: 375px;
+}
+
+.task8-banner img {
+    width: 100%;
+}
+
+/* banner部分、轮播图 */
+.task8-banner {
+    overflow: hidden;  
+    position: relative;
+    /* background: salmon;  */
+    /* height: auto; */
+    /* max-height: 600px;  */
+    height: 375px;
+    width: 100%;
+    min-width: 1200px;
+}
+
+.ui-slider-LunBT{
+    position: relative;
+    height: 375px;
+}
+
+/* 这是之前自定义轮播图部分 */
+.task8-banner .inner {
+    position: relative;
+    width: 9999px;
+    /* width: 100%;  */
+    left: 0;
+    /* left: -1200px; */
+    top: 0;
+    transition: all .5s; /* 图片缓慢移动*/
+}
+
+.task8-banner .inner .innerwraper {
+    float: left;
+    /* width: 100%; */
+    /* width: 1920px; */
+}
+
+.task8-banner .inner .innerwraper img {
+    height: auto;
+    width: 100%;
+    /* height: 100%;
+    width: auto; */
+    max-width: 1200px;
+    /* margin: 0 150px; */
+    margin: 0;
+}
+
+/* 
+.ui-slider-arrow {
+    /* width: 544px; 
+    width: 1200px;
+    height: 40px;
+    position: absolute;
+    /* margin: 0 auto; 
+    margin-top: -20px;
+    top: 50%;
+    /* background-color: orange; 
+}
+
+.ui-slider-arrow .item {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    background: url(../img/ui-slider-arrow.png) no-repeat;
+}
+
+.ui-slider-arrow .left {
+    left: 0;
+}
+
+.ui-slider-arrow .right {
+    right: 0;
+    /* x -40px 
+    background-position: -40px 0;
+} */
+
+.task8-banner .pagination {
+    position: absolute;
+    left: 0px;
+    top: 300px;
+    /* bottom: 10px; */
+    width: 100%;
+    text-align: center;
+}
+
+.task8-banner .pagination span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #9aa499;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.task8-banner .pagination .active {
+    background-color: #fff;
+}
+
+
+
+
+.task8-home {
+    background-color: #fafafa;
+    width: 100%;
+    /* max-width: 1920px; */
+}
+
+/* introduce部分 */
+.task8-introduce .introduce-one {
+    margin-top: 60px;
+    /* border: 2px solid darkcyan; */
+}
+
+.task8-introduce .introduce-one .introduce-pic-001 {
+    background: url("../img/task8-introduce-001.png") no-repeat;
+    width: 42px;
+    height: 62px;
+    margin: 0 auto;
+}
+
+.task8-introduce .introduce-one .introduce-pic-002 {
+    background: url("../img/task8-introduce-002.png") no-repeat;
+    width: 60px;
+    height: 48px;
+    margin: 0 auto;
+    margin-top: 14px;
+}
+
+.task8-introduce .introduce-one .introduce-pic-003 {
+    background: url("../img/task8-introduce-003.png") no-repeat;
+    width: 52px;
+    height: 56px;
+    margin: 0 auto;
+    margin-top: 6px;
+}
+
+.task8-introduce .introduce-one .introduce-pic-004 {
+    background: url("../img/task8-introduce-004.png") no-repeat;
+    width: 14px;
+    height: 14px;
+    margin: 0 auto;
+    margin-top: 6px;
+}
+
+.task8-introduce .introduce-one span {
+    display: block;
+    font-size: 20px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.task8-introduce .introduce-one p {
+    font-size: 16px;
+    color: #898989;
+    padding: 0 30px;
+}
+
+.task8-introduce .introduce-one .ul-one {
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.task8-introduce .introduce-one ul li {
+    display: inline-block;
+    margin: 3px 6px;
+}
+
+.task8-introduce .introduce-one .ul-two {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+/* 如何学习部分 */
+.task8-howToStudy {
+    /* background: orangered; */
+    margin-top: 50px;
+}
+
+.task8-howToStudy h3 {
+    text-align: center;
+}
+
+.task8-howToStudy .task8-howToStudy-one {
+    margin-top: 50px;
+    /* border: 2px solid saddlebrown; */
+}
+
+.task8-howToStudy .task8-howToStudy-one .steps {
+    float: left;
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 50%;
+    border: 1px solid #898989;
+    margin-right: 10px;
+}
+
+.task8-howToStudy .task8-howToStudy-one .steps span {
+    font-size: 22px;
+    color: #29b078;
+}
+
+.task8-howToStudy .task8-howToStudy-one p {
+    color: #898989;
+    margin-top: 10px;
+    padding: 0 30px;
+}
+
+.task8-howToStudy .task8-howToStudy-one a {
+    float: right;
+    background: url("../img/task8-steps.png") no-repeat;
+    background-size: 100% auto;
+    width: 32px;
+    height: 32px;
+    margin-top: -30px;
+}
+
+/* 优秀学员展示部分 */
+.task8-students {
+    /* background: orchid; */
+    /* margin-bottom: 200px; */
+    margin-top: 40px;
+}
+
+.task8-students h4 {
+    text-align: center;
+}
+
+.task8-students .students-one {
+    margin-top: 50px;
+}
+
+.task8-students .students-one .box {
+    background-color: #fff;
+    width: 260px;
+    height: 320px;
+    padding: 16px 0;
+    border: 1px solid #898989;
+    border-radius: 4px;
+}
+
+.task8-students .students-one .box .students-photo {
+    background: url("../img/task8-stu003.png") no-repeat;
+    background-size: 100% auto;
+    width: 108px;
+    height: 108px;
+    margin: 0 auto;
+}
+
+.task8-students .students-one .box .students-name {
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.task8-students .students-one .box .students-state {
+    margin-top: 30px;
+    color: #898989;
+    padding: 0 30px;
+}
+
+.task8-students .students-pagination {
+    margin-top: 400px;
+    text-align: center;
+}
+
+.task8-students .students-pagination span {
+    display: inline-block;
+    background-color: #fff;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #898989;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.task8-students .students-pagination span.active {
+    background-color: #29b078;
+}
+
+/* 战略合作企业部分 */
+.task8-company {
+    /* background-color: lightseagreen; */
+    /* margin-bottom: 200px; */
+    margin-top: 50px;
+}
+
+.task8-company h4 {
+    text-align: center;
+}
+
+.task8-company .company-one {
+    background-color: #fff;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #898989;
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.task8-company .company-one a {
+    background: url("../img/task8-company001.png") no-repeat;
+    background-size: 100% auto;
+    width: 180px;
+    height: 180px;
+}
+
+/* 友情链接部分 */
+.task8-friend-link {
+    background: #fff;
+    margin-top: 50px;
+    /* margin-bottom: 200px; */
+}
+
+.task8-friend-link h4 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.task8-friend-link .link-one {
+    margin-top: 10px;
+    /* border: 2px solid sandybrown; */
+}
+
+.task8-friend-link .link-one ul li {
+    list-style-type: disc;
+    margin: 10px 50px;
+}
+
+.task8-friend-link .link-one ul li a {
+    color: #898989;
+}
+
+
+
+@media (max-width:768px) {
+    .task8-banner {
+        height: auto;
+        min-height: 150px;
+        /* max-height: 200px; */
+        min-width: 300px;
+    }
+
+    .task8-banner .inner .innerwraper img {
+        height: auto;
+        min-height: 150px;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 30px;
+        /* margin: 0; */
+    }
+
+    .task8-banner .pagination {
+        left: 0px;
+        top: 100px;
+        width: 100%;
+    }
+
+    .task8-banner .pagination span {
+        width: 6px;
+        height: 6px;
+    }
+
+    /* introduce部分 */
+    .public-container {
+        width: 100%;
+    }
+
+    .task8-introduce .introduce-one {
+        margin-top: 20px;
+    }
+
+    .task8-introduce .introduce-one .introduce-pic-001 {
+        background-size: 100% auto;
+        width: 22px;
+        height: 22px;
+    }
+
+    .task8-introduce .introduce-one .introduce-pic-002 {
+        background-size: 100% auto;
+        width: 22px;
+        height: 22px;
+    }
+
+    .task8-introduce .introduce-one .introduce-pic-003 {
+        background-size: 100% auto;
+        width: 22px;
+        height: 22px;
+    }
+
+    .task8-introduce .introduce-one .introduce-pic-004 {
+        background-size: 100% auto;
+        width: 12px;
+        height: 12px;
+    }
+
+    .task8-introduce .introduce-one span {
+        font-size: 16px;
+        margin: 10px auto;
+    }
+
+    .task8-introduce .introduce-one p {
+        font-size: 14px;
+        padding: 0 60px;
+    }
+
+    .task8-introduce .introduce-one .ul-one {
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    .task8-introduce .introduce-one ul li {
+        display: inline-block;
+        margin: 3px 6px;
+    }
+
+    .task8-introduce .introduce-one .ul-two {
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    /* 如何学习部分 */
+    .task8-howToStudy {
+        margin-top: 20px;
+    }
+
+    .task8-howToStudy .col-xs-6 {
+        padding: 0;
+    }
+
+    .task8-howToStudy .task8-howToStudy-one {
+        margin-top: 20px;
+        height: 60px;
+    }
+
+    .task8-howToStudy .task8-howToStudy-one .steps {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin-right: 0;
+        margin-left: 6px;
+    }
+
+    .task8-howToStudy .task8-howToStudy-one .steps span {
+        font-size: 16px;
+    }
+
+    .task8-howToStudy .task8-howToStudy-one p {
+        margin-top: 0;
+        padding: 0 40px;
+        font-size: 12px;
+        ;
+        height: 60px;
+    }
+
+    .task8-howToStudy .task8-howToStudy-one a {
+        width: 22px;
+        height: 22px;
+        margin-top: -56px;
+        margin-right: 22px;
+    }
+    
+    /* banner部分、轮播图 */
+    .task8-banner {
+        height: 160px;
+    }
+    
+    .ui-slider-LunBT{
+        height: 160px;
+    }
+}

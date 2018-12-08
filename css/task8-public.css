@@ -1,0 +1,232 @@
+@charset "utf-8";
+/*这是一个大概初始样式*/
+/*重置样式*/
+body,div,dt,dl,ul,li,h2,h3,h4,h5,h6,input,form,a,p,textarea { 
+    margin:0;
+    padding:0;
+    font-family:"Helvetica",Arial, Helvetica, sans-serif;
+}
+
+ol,ul,li {
+    list-style: none;
+}
+
+a {
+    text-decoration:none;
+    display:block;
+    color: aliceblue;
+}
+
+img {
+    border:none;
+    display: block;
+}
+
+.clearfloat {
+    zoom: 1;
+}
+.clearfloat:after {
+    display: block;
+    clear: both;
+    content:  "";
+    visibility: hidden;
+    height: 0;
+}
+
+/* .task8-home{
+    background-color: #fafafa;
+    width: 100%;
+    /* max-width: 1920px; 
+} */
+/*任务8顶部联系部分*/
+.task8-public-top {
+    background: #ffffff;
+    /* background: orange; */
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+.public-container {
+    width: 1200px;
+    margin: 0 auto;
+    /* background: wheat; */
+}
+.task8-public-top p {
+    font-size: 16px;
+    color: #29b078;
+    line-height: 40px;
+}
+.task8-public-top ul {
+    float: right;
+    line-height: 40px;
+    margin-top: 6px;
+}
+.task8-public-top ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.top-xiangying {
+    /* background: wheat; */
+    float: right;
+    height: 26px;
+    font-size: 12px;
+    line-height: 26px;
+}
+.top-xiangying span{
+    margin-right: 10px;
+}
+.top-xiangying .line{
+    border-left: 1px solid #29b078;
+}
+
+/* 头部导航条部分 */
+.task8-public-header {
+    position: relative;
+    background: #29b078;
+    width: 100%;
+    height: 100px;
+    min-width: 1200px;
+    z-index: 99;
+    /* border: 2px solid darkblue; */
+}
+.task8-public-header .header-left {
+    float: left;
+    margin-top: 20px;
+    color: #ffffff;
+}
+.task8-public-header p {
+    font-size: 32px;
+}
+
+.task8-public-header .navbar-default {
+    border: 0;
+    margin-bottom: 0;
+    background-color: #29b078;
+}
+/* .container{
+    border: 2px solid orange;
+}
+.container-fluid{
+    border: 4px solid darkgoldenrod;
+} */
+.navbar-nav{
+    /* border: 2px solid saddlebrown; */
+    margin-right: 0;
+}
+.navbar-nav li{
+    /* width: 100px; */
+    width: 126px;
+    height: 96px;
+    text-align: center;
+    font-size: 22px;
+}
+.navbar-default .navbar-nav li a{
+    padding: 0;
+    color: #ffffff;
+    line-height: 96px;
+}
+.navbar-default .navbar-nav li.active001 a{
+    border-bottom: 4px solid #ffffff;
+}
+/* 任务8底部 */
+.task8-public-footer {
+    background: #29b078;
+    width: 100%;
+    /* height: 180px; */
+    margin-top: 10px;
+}
+.task8-public-footer .footer-left p {
+    margin-top: 20px;
+    color: #fff;
+}
+.task8-public-footer .footer-left ul li {
+    display: inline-block;
+    margin-top: 30px;
+    border-right: 2px solid #fff;
+    padding-right: 12px;
+    margin-right: 12px;
+}
+.task8-public-footer .footer-center p {
+    margin-top: 20px;
+    color: #fff;
+}
+.task8-public-footer .footer-center ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.task8-public-footer .footer-right p {
+    margin-top: 20px;
+    color: #fff;
+}
+.task8-public-footer .footer-right .weixin {
+    background: url("../img/task8-footer-weixin.png") no-repeat;
+    background-size: 100% auto;
+    width: 92px;
+    height: 92px;
+    margin-top: 6px;
+}
+.task8-public-footer .rights {
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+}
+
+
+
+
+@media (max-width:768px){
+    .task8-public-top {
+        background-color: #fff;
+        width: 100%;
+        height: 26px;
+    }
+    .task8-public-header {
+        height: 50px;
+        min-width: 200px;
+        /* border: 2px solid darkblue; */
+    }
+    .public-container{
+        width: 100%;
+    }
+    .navbar-toggle{
+        padding: 4px;
+        margin: 4px;
+        margin-top: 12px;
+        margin-right: 12px;
+    }
+    .task8-public-header .header-left {
+        float: left;
+        margin-top: 4px;
+        color: #ffffff;
+    }
+    .task8-public-header p {
+        font-size: 16px;
+    }
+    .container{
+        padding: 0;
+    }
+
+    .navbar-nav{
+        /* border: 2px solid saddlebrown; */
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .navbar-nav li{
+        width: 100%;
+        height: 46px;
+        font-size: 12px;
+    }
+    .navbar-default .navbar-nav li a{
+        width: 100%;
+        padding: 0;
+        line-height: 46px;
+    }
+    .navbar-default .navbar-nav li.active001 a{
+        border-bottom: 2px solid #ffffff;
+    }
+
+}
+
+
+
